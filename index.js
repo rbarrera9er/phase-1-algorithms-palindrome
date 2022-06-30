@@ -1,9 +1,20 @@
-function isPalindrome(word) {
+function isPalindrome(word) { //function given for the assignment where the code will invoke if the word is a palindrome
   // Write your algorithm here
+  let reversed = word.split("").reverse().join(""); //variable will take string/word break it up, reverse the array and bring the array back together
+  if (reversed === word) return true; // verify if the word reversed is the same with boolean 
+  return false;
 }
-
+console.log("abba")
+console.log("racecar")
+console.log("a")
+console.log("robot")
+console.log("ab")
 /* 
   Add your pseudocode here
+  create function that will take the word/string as a parameter
+  break the word up and reverse it
+  if the reversed word is equel to word then it is true
+  if not it is falsy 
 */
 
 /*
